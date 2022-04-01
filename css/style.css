@@ -1,20 +1,22 @@
 * {
     box-sizing: border-box;
-    background-color: rgb(23, 21, 31);
+    background-color: rgb(39, 35, 58);
+    color: white;
 }
 iframe {
     height: 10vw;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .ul-nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    margin-bottom: 10vw;
 }
 .ul-nav a {
     text-decoration: none;
-    color: white;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 a:hover {
     color: red;
@@ -24,4 +26,26 @@ a:active {
     color: green;
     background-color: white;
     border-radius: 50%;
+}
+.who-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.who-container img {
+    height: 20vw;
+}
+.text-container {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 3vw;
+}
+h2 {
+    font-size: 4vw;
+}
+p {
+    font-size: 2vw;
 }
