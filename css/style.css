@@ -3,6 +3,7 @@
     background-color: rgb(23, 21, 31);
 }
 iframe {
+    height: 10vw;
     margin-bottom: 20px;
 }
 .ul-nav {
@@ -13,9 +14,14 @@ iframe {
 .ul-nav a {
     text-decoration: none;
     color: white;
-    font-size: 5vh;
+    font-size: 4vw;
 }
 a:hover {
     color: red;
     transition: all 0.3s;
+}
+a:active {
+    color: green;
+    background-color: white;
+    border-radius: 50%;
 }
