@@ -6,8 +6,6 @@
     background-color: rgb(39, 35, 58);
     color: white;
 }
-.main-container {
-}
 iframe {
     height: 10vw;
     margin-top: 20px;
@@ -28,7 +26,7 @@ a {
     list-style: none;
     margin-bottom: 10vw;
 }
-.ul-nav a {
+a {
     text-decoration: none;
 } 
 a:hover {
@@ -66,10 +64,14 @@ h2 {
 p {
     font-size: 4vw;
 }
+.titulo-blog {
+    margin: 20px;
+    text-align: center;
+}
 
 
 .slider {
-	width: 95%;
+	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
@@ -77,9 +79,9 @@ p {
 .slider ul {
 	display: flex;
 	padding: 0;
-	width: 400%;
+	width: 300%;
 	
-	animation: cambio 20s infinite alternate linear;
+	animation: cambio 15s infinite alternate linear;
 }
 
 .slider li {
@@ -93,16 +95,14 @@ p {
 
 @keyframes cambio {
 	0% {margin-left: 0;}
-	20% {margin-left: 0;}
+	30% {margin-left: 0;}
 	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
+	35% {margin-left: -100%;}
+	65% {margin-left: -100%;}
 	
-	50% {margin-left: -200%;}
 	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+	100% {margin-left: -200%;}
+
 }
 
 
