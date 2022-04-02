@@ -1,8 +1,10 @@
-* {
+html {
     box-sizing: border-box;
     width: 100%;
     margin: 0;
     padding: 0;
+}
+* {
     background-color: rgb(39, 35, 58);
     color: white;
 }
@@ -41,7 +43,6 @@ a:active {
 .who {
     text-align: center;
     padding-bottom: 40px;
-    border-bottom: dashed 2px yellow;
 }
 .who img {
     max-width: 60%;
@@ -64,15 +65,17 @@ h2 {
 p {
     font-size: 4vw;
 }
-.titulo-blog {
-    margin: 20px;
+.titulo-web {
+    padding: 20px;
     text-align: center;
+    border-top: dashed 2px yellow;
 }
 
 
 .slider {
 	width: 80%;
-	margin: auto;
+    margin: auto;
+    margin-bottom: 40px;
 	overflow: hidden;
 }
 
