@@ -30,8 +30,8 @@ a {
 } 
 a:hover {
     color: red;
-    transition: all 0.3s;
-    border-bottom: 5px solid red;
+    transition: all 0.5s ease-in-out;
+    border: 5px solid green;
 }
 a:active {
     color: green;
