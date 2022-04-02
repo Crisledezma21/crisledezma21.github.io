@@ -5,13 +5,8 @@ html {
     padding: 0;
 }
 * {
-    background-color: rgb(39, 35, 58);
-    color: white;
-}
-iframe {
-    height: 10vw;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: #white;
+    color: #A39442;
 }
 ul {
     padding: 0;
@@ -20,14 +15,14 @@ li {
     text-align: center;
     margin: 10px;
 }
-ul, li, a {
-    background-color: rgb(70, 24, 112);
+.nav-container {
+    background-color: #4251A3;
 }
 a {
     font-size: 6vw;
 }
 .ul-nav {
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
     margin-bottom: 10vw;
 }
@@ -37,6 +32,7 @@ a {
 a:hover {
     color: red;
     transition: all 0.3s;
+    border-bottom: 5px solid red;
 }
 a:active {
     color: green;
@@ -71,9 +67,11 @@ p {
 .titulo-web {
     padding: 20px;
     text-align: center;
-    border-top: dashed 2px yellow;
 }
-
+.web-container, .web-container div {
+    -webkit-box-shadow: inset 0px 0px 15px -2px rgba(0,0,0,0.48); 
+    box-shadow: inset 0px 0px 15px -2px rgba(0,0,0,0.48);
+}
 
 .slider {
 	width: 80%;
@@ -114,7 +112,7 @@ p {
 
 footer p {
     padding: 3vw;
-    background-color: rgb(70, 24, 112);
+    background-color: #4251A3;
     font-size: 4vw;
     text-align: center;
     margin-top: 30px;
