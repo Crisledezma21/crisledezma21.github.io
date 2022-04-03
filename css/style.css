@@ -5,6 +5,7 @@ html {
     padding: 0;
 }
 * {
+    font-family: 'Open Sans', sans-serif;
     color: #A39442;
 }
 ul {
@@ -22,7 +23,7 @@ a {
     font-size: 6vw;
 }
 .btn {
-    max-width: 60%;
+    width: 50%;
     padding: 10px;
     background-color: rgb(248, 232, 211);
     border: none;
@@ -44,9 +45,8 @@ a {
     text-decoration: none;
 } 
 a:hover {
-    color: red;
+    color: black;
     transition: all 0.5s ease-in-out;
-    border: 5px solid green;
 }
 a:active {
     color: green;
@@ -228,6 +228,9 @@ footer p {
 }
 .popup.active .input-container {
     animation: entradaInputs 1.3s ease .5s forwards;
+}
+#btn-cerrar-pop-up {
+    border: none;
 }
 @keyframes entradaTitulo {
     from{
