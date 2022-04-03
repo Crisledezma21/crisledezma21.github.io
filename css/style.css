@@ -16,9 +16,24 @@ li {
 }
 .nav-container {
     background-color: #4251A3;
+    border-radius: 20px;
 }
 a {
     font-size: 6vw;
+}
+.btn {
+    max-width: 60%;
+    padding: 10px;
+    background-color: rgb(248, 232, 211);
+    border: none;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 2px 1px #000000; 
+    box-shadow: 0px 0px 3px 1px #000000;
+}
+.btn:hover {
+    background-color: burlywood;
+    color: black;
+    transition: all 0.4s ease-in-out;
 }
 .ul-nav {
     justify-content: space-evenly;
@@ -50,6 +65,7 @@ a:active {
     width: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .text-container > h2, h1, p {
     margin-bottom: 20px;
@@ -115,6 +131,7 @@ footer p {
     font-size: 4vw;
     text-align: center;
     margin-top: 30px;
+    border-radius: 20px;
 }
 
 @media(min-width:480px){
@@ -147,5 +164,88 @@ footer p {
     }
     footer > p {
         font-size: 2vw;
+    }
+}
+.overlay {
+    background-color: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.overlay.active {
+    visibility: visible;
+}
+.popup {
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+    transition: .5s ease all;
+    transform: scale(0.7);
+}
+.btn-cerrar-pop-up {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+}
+.btn-cerrar-pop-up:hover {
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+.popup h2 {
+    opacity: 0;
+}
+.popup form .input-container {
+    opacity: 0;
+}
+.popup form .input-container input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid gray;
+}
+.popup.active {
+    opacity: 1;
+    transform: scale(1);
+}
+.popup.active h2 {
+    animation: entradaTitulo 1s ease .5s forwards;
+}
+.popup.active .input-container {
+    animation: entradaInputs 1.3s ease .5s forwards;
+}
+@keyframes entradaTitulo {
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes entradaInputs {
+    from{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }

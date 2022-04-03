@@ -15,7 +15,7 @@
       <nav>
         <ul class="ul-nav">
           <li><a href="#web">Web Development</a></li>
-          <li><a href="#">Graphic Design</a></li>
+          <!-- <li><a href="#">Graphic Design</a></li> -->
         </ul>
       </nav>
     </div>
@@ -29,6 +29,21 @@
         <p>Hi! I'm from Costa Rica.<br>I'm always learning new technologies.<br>I love to learn new things
           everyday.<br>If you are looking for a talented and creative developer and graphic designer, I think you
           already found what you were looking for.</p>
+        <button class="btn" id="btn" type="button">Contact me</button>
+      </div>
+    </div>
+    <div class="overlay"id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" class="btn-cerrar-pop-up" id="btn-cerrar-pop-up">X</a>
+        <form action="">
+          <h2>I'll contact you back right away</h2>
+          <div class="input-container">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+          </div>
+          <input type="submit" class="btn" value="Send">
+        </form>
+
       </div>
     </div>
     <div class="web-container" id="web">
@@ -77,13 +92,14 @@
       </div>
     </div>
     <div class="design-container">
-      <h2 class="titulo-web">Graphic Design</h2>
-      <h2 class="titulo-web">Under Construction</h2>
+      <h2 class="titulo-web">Oh! And I'm also Graphic Designer</h2>
+      <!-- <h2 class="titulo-web">Under Construction</h2> -->
     </div>
     <footer>
       <p>All rights reserved 2022®</p>
     </footer>
   </div>
+  <script src="./js/main.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
