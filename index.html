@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Cristian's Portfolio</title>
 </head>
 
@@ -18,7 +19,7 @@
         </ul>
       </nav>
     </div>
-    <div class="who">
+    <div class="who" data-aos="fade-up">
       <div class="img-container">
         <img src="img/retrato.png" alt="Cristian's picture">
       </div>
@@ -32,8 +33,8 @@
     </div>
     <div class="web-container" id="web">
       <h2 class="titulo-web">Web Development</h2>
-      <h2 class="titulo-web"><a href="https://proyecto3crisledezma.netlify.app/cursos.html" target="_blank">Blog de Café</a></h2>
-      <div class="slider">
+        <h2 class="titulo-web"><a href="https://proyecto3crisledezma.netlify.app/cursos.html" target="_blank">Blog de Café</a></h2>
+      <div class="slider" data-aos="fade-right">
         <ul>
           <li>
             <img src="img/blog1.png" alt="First Blog Image">
@@ -47,7 +48,7 @@
         </ul>
       </div>
       <h2 class="titulo-web"><a href="https://proyecto2crisledezma.netlify.app/" target="_blank">Front End Store</a></h2>
-      <div class="slider">
+      <div class="slider" data-aos="fade-left">
         <ul>
           <li>
             <img src="img/front1.png" alt="First Blog Image">
@@ -61,7 +62,7 @@
         </ul>
       </div>
       <h2 class="titulo-web"><a href="https://proyecto1-crisledezma.netlify.app/" target="_blank">Freelancer</a></h2>
-      <div class="slider">
+      <div class="slider" data-aos="fade-left">
         <ul>
           <li>
             <img src="img/free1.png" alt="First Blog Image">
@@ -83,7 +84,10 @@
       <p>All rights reserved 2022®</p>
     </footer>
   </div>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
