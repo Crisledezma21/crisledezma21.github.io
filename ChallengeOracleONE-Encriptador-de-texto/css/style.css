@@ -1,0 +1,149 @@
+body{
+  font-family: 'Inter', sans-serif;
+  background-color: #F3F5FC;
+  font-family: Inter;
+}
+header{
+  width: 100%;
+  height: 96px;
+  margin-bottom: 56px;
+}
+.logo{
+  position: relative;
+  top: 24px;
+  left: 16px;
+}
+main{
+  margin: 0 auto;
+  max-width: 768px;
+  text-align: center;
+}
+#ingrese-texto{
+  font-family: inherit;
+  overflow: auto;
+  width: 90%;
+  background-color: #F3F5FC;
+  border: none;
+  font-size: 32px;
+  color: #0A3871;
+  font-weight: normal;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#ingrese-texto::placeholder{
+  font-family: 'Inter', sans-serif;
+  color: #0A3871;
+}
+#ingrese-texto:focus{
+  outline: none;
+}
+.solo-letras{
+  display: flex;
+  color: #495057;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.solo-letras span{
+  padding-right: 8px;
+  padding-left: 16px;
+}
+.botones input{
+  padding: 24px;
+  width: 90%;
+  margin: 8px auto;
+}
+#encriptar, #desencriptar{
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+}
+#encriptar{
+  color: #F3F5FC;
+  background-color: #0A3871;
+}
+#desencriptar{
+  background-color: #D8DFE8;
+  color: #0A3871;
+}
+.respuesta{
+  border-radius: 32px;
+  padding: 32;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 40px;
+  width: 85%;
+  box-shadow: 0px 24px 32px -8px #00000014;
+}
+.contenedor-respuesta{
+  padding: 32px;
+}
+#h2-respuesta{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+#p-respuesta{
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#footer{
+  text-align: center;
+  padding: 20px;
+  font-family: inherit;
+  color: #FFFFFF;
+  background-color: #0A3871;
+}
+@media(min-width:576px){
+  .logo{
+    position: relative;
+    top: 73px;
+    left: 40px;
+  }
+  header{
+    width: 100%;
+    height: 184px;
+    margin-bottom: 56px;
+  }
+  .botones input{
+    width: 40%;
+    margin: 8px;
+  }
+}
+@media(min-width:992px){
+  header{
+    width: 65%;
+  }
+  #contenido-principal{
+    margin-bottom: 30px;
+  }
+  #contenido-izquierda{
+    width: 55%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+  #contenido-derecha{
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    width: 35%;
+  }
+  .contenedor-respuesta{
+    position: absolute;
+    bottom: 25vh;
+  }
+  .respuesta{
+    background-position-y: 25vh;
+    background-image: url(../img/Muñeco.svg);
+    background-repeat: no-repeat;
+    height: 105vh;
+  }
+}
