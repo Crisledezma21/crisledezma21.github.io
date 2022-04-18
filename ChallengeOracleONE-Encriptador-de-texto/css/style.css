@@ -102,6 +102,12 @@ main{
   color: #FFFFFF;
   background-color: #0A3871;
 }
+.incorrecto{
+  color: #ff0000;
+}
+.correcto{
+  color: #00ff00;
+}
 @media(min-width:576px){
   .logo{
     position: relative;
@@ -139,6 +145,10 @@ main{
   .contenedor-respuesta{
     position: absolute;
     bottom: 25vh;
+  }
+  .posicion-relativa{
+    position: absolute;
+    top: 15%;
   }
   .respuesta{
     background-position-y: 25vh;

@@ -1,0 +1,61 @@
+var input = document.getElementById('ingrese-texto');
+var btnCode = document.getElementById('encriptar');
+var contenedorRespuesta = document.getElementById('contenedor-respuesta');
+var respuestaH2 = document.getElementById('h2-respuesta');
+var respuestaP = document.getElementById('p-respuesta');
+var muneco = document.getElementById('muneco');
+var encriptar = true;
+
+btnCode.addEventListener('click', irEncriptar);
+
+function irEncriptar(){
+  if(encriptar){
+    code();
+  }else{reset();}
+}
+
+function code() {
+  var texto = input.value;
+  var textoArr = texto.split('');
+  var textoCodificado = [];
+  var salida = '';
+  
+  if (validarInput(texto) && encriptar) {
+    for (i = 0; i < textoArr.length; i++) {
+      if (textoArr[i] === 'a') { textoCodificado[i] = textoArr[i].replace('a', 'ai'); }
+      else if (textoArr[i] === 'e') { textoCodificado[i] = textoArr[i].replace('e', 'enter'); }
+      else if (textoArr[i] === 'i') { textoCodificado[i] = textoArr[i].replace('i', 'imes'); }
+      else if (textoArr[i] === 'o') { textoCodificado[i] = textoArr[i].replace('o', 'ober'); }
+      else if (textoArr[i] === 'u') {
+        textoCodificado[i] = textoArr[i].replace('u', 'ufat');
+      } else { textoCodificado[i] = textoArr[i]; }
+    }
+    salida = textoCodificado.join('');
+    respuestaH2.textContent = 'Mensaje codificado';
+    respuestaH2.classList.add('correcto');
+    muneco.style.backgroundImage = 'none';
+    respuestaP.textContent = salida;
+    contenedorRespuesta.classList.add('posicion-relativa');
+    btnCode.value = 'Reset';
+    encriptar = false;
+  } else { rechazarEntrada();return; }
+}
+function validarInput(texto) {
+  if (texto.length > 0 && isNaN(texto)) { return true; }
+  else { return false; }
+}
+function rechazarEntrada() {
+  respuestaH2.textContent = 'El texto ingresado es incorrecto';
+  respuestaH2.classList.add('incorrecto');
+}
+
+function reset(){  
+  respuestaH2.textContent = 'Ningún mensaje fue encontrado';
+  respuestaH2.classList.remove('correcto');
+  muneco.style.backgroundImage = 'url(./img/Muñeco.svg)';
+  respuestaP.textContent = 'Ingresa el texto que desees encriptar o desencriptar';
+  contenedorRespuesta.classList.remove('posicion-relativa');
+  contenedorRespuesta.classList.add('contenedor-respuesta');
+  btnCode.value = 'Encriptar';
+  encriptar = true;
+};
