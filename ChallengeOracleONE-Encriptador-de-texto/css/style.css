@@ -50,8 +50,8 @@ main{
   padding-left: 16px;
 }
 .botones input{
-  padding: 24px;
   width: 90%;
+  height: 50px;
   margin: 8px auto;
 }
 #encriptar, #desencriptar{

@@ -38,7 +38,11 @@ function code() {
     contenedorRespuesta.classList.add('posicion-relativa');
     btnCode.value = 'Reset';
     encriptar = false;
-  } else { rechazarEntrada();return; }
+  } else { 
+    rechazarEntrada();
+    encriptar = false; 
+    btnCode.value = 'Reset';
+  }
 }
 function validarInput(texto) {
   if (texto.length > 0 && isNaN(texto)) { return true; }
@@ -50,12 +54,5 @@ function rechazarEntrada() {
 }
 
 function reset(){  
-  respuestaH2.textContent = 'Ningún mensaje fue encontrado';
-  respuestaH2.classList.remove('correcto');
-  muneco.style.backgroundImage = 'url(./img/Muñeco.svg)';
-  respuestaP.textContent = 'Ingresa el texto que desees encriptar o desencriptar';
-  contenedorRespuesta.classList.remove('posicion-relativa');
-  contenedorRespuesta.classList.add('contenedor-respuesta');
-  btnCode.value = 'Encriptar';
-  encriptar = true;
+  window.location.reload();
 };
