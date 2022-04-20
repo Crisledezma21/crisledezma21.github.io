@@ -15,7 +15,7 @@ function accionCopiar(){
     //
     navigator.clipboard.writeText(textoCopiar.textContent)
     .then(() => {
-    console.log("Text copied to clipboard...")
+    console.log("Text copied to clipboard...");
     abrirVentanaAviso();
 })
     .catch(err => {
