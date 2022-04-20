@@ -38,21 +38,10 @@ function code() {
     contenedorRespuesta.classList.add('posicion-relativa');
     btnCode.value = 'Reset';
     encriptar = false;
+    botonCopiar();
   } else { 
     rechazarEntrada();
     encriptar = false; 
     btnCode.value = 'Reset';
   }
 }
-function validarInput(texto) {
-  if (texto.length > 0 && isNaN(texto)) { return true; }
-  else { return false; }
-}
-function rechazarEntrada() {
-  respuestaH2.textContent = 'El texto ingresado es incorrecto';
-  respuestaH2.classList.add('incorrecto');
-}
-
-function reset(){  
-  window.location.reload();
-};

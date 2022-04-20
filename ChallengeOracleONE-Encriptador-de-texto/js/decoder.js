@@ -31,6 +31,7 @@ function decode(){
   respuestaP.textContent = salida;
   contenedorRespuesta.classList.add('posicion-relativa');
   btnDecode.value = 'Reset';
+  botonCopiar();
   desencriptar = false;
 }else{
   rechazarEntrada();
@@ -38,14 +39,3 @@ function decode(){
   btnDecode.value = 'Reset';
 }
 }
-function validarInput(texto) {
-  if (texto.length > 0 && isNaN(texto)) { return true; }
-  else { return false; }
-}
-function rechazarEntrada() {
-  respuestaH2.textContent = 'El texto ingresado es incorrecto';
-  respuestaH2.classList.add('incorrecto');
-}
-function reset(){  
-  window.location.reload();
-};
