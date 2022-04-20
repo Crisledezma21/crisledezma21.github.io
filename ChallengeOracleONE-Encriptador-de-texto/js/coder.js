@@ -6,9 +6,9 @@ var respuestaP = document.getElementById('p-respuesta');
 var muneco = document.getElementById('muneco');
 var encriptar = true;
 
-btnCode.addEventListener('click', irEncriptar);
+btnCode.addEventListener('click', ifEncriptar);
 
-function irEncriptar(){
+function ifEncriptar(){
   if(encriptar){
     code();
   }else{reset();}
