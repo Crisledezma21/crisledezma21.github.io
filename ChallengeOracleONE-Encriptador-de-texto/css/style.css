@@ -151,17 +151,15 @@ main{
     width: 35%;
   }
   .contenedor-respuesta{
+    width: 80%;
     position: absolute;
-    bottom: 25vh;
-  }
-  .posicion-relativa{
-    position: absolute;
-    top: 15%;
+    bottom: 10rem;
   }
   .respuesta{
-    background-position-y: 25vh;
+    background-position-y: 8rem;
     background-image: url(../img/Muñeco.svg);
     background-repeat: no-repeat;
-    height: 105vh;
+    min-height: 50rem;
+    max-height: 100%;
   }
 }
