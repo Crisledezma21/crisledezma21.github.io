@@ -3,6 +3,10 @@
   color: #2c3e50;
 }
 
+* a {
+  text-decoration: none;
+}
+
 .main-color {
   color: #7f8c8d;
 }
@@ -71,4 +75,14 @@ header nav a img {
   width: 50%;
   border: 2px solid #2980b9;
   border-radius: 1.5rem;
+}
+
+.hover-blue:hover {
+  color: #3498db;
+  cursor: pointer;
+}
+
+.border {
+  border: 2px solid #2980b9;
+  border-radius: 10%;
 }
